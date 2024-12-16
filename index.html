@@ -33,7 +33,7 @@
                         Зареєструйся на курс до відкриття школи <br>
                         та отримай знижку
                     </p>
-                    <div class="button main__button"><a href="">Отримати знижку 15%</a></div>
+                    <div class="main__button"><a onclick="openModal('registration')" class="button btn-adaptive">Отримати знижку 15%</a></div>
                 </div>
                 <img src="images/character.svg" alt="Character">
             </div>
@@ -78,11 +78,61 @@
                     <h1 class="action__title">А тепер просто натисність кнопку справа :)</h1>
                     <p class="action__subtitle">Більше датільнішої інформації у нас в <a href="" class="action__subtitle__link">instagram</a></p>
                 </div>
-                <div class="button"><a href="">Отримати знижку 15%</a></div>
+                <div class="button"><a onclick="openModal('registration')" class=" btn-adaptive">Отримати знижку 15%</a></div>
             </div>
         </div>
     </div>
     <footer>Favorite English 2024</footer>
+        <!-- Модальне вікно реєстрації -->
+        <div id="registration" class="modal" data-modal="registration">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('registration')"><ion-icon name="close-outline"></ion-icon></span>
+                <h2>Отримання знижки</h2>
+                <div class="modal-inputs">
+                    <input type="text" placeholder="Ім'я" required>
+                    <input type="email" placeholder="Email" required>
+                    <fieldset>
+                        <div class="form-button">
+                            <div class="button-group">
+                                <input type="radio" id="A1" name="frameworks" checked="" />
+                                <label for="A1">A1</label>
+                            </div>
+                        </div>
+
+                        <div class="form-button">
+                            <div class="button-group">
+                                <input type="radio" id="A2" name="frameworks" />
+                                <label for="A2">A2</label>
+                            </div>
+                        </div>
+
+                        <div class="form-button">
+                            <div class="button-group">
+                                <input type="radio" id="B1" name="frameworks" />
+                                <label for="B1">B1</label>
+                            </div>
+                        </div>
+
+                        <div class="form-button">
+                            <div class="button-group">
+                                <input type="radio" id="B2" name="frameworks" />
+                                <label for="B2">B2</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                </div>
+                <div class="modal__bottom-section">
+                    <div class="unknown-section">
+                        <div class="unknown-level"><a href="#">Не знаю свого рівня</a></div>
+                        <div class="back-button">
+                            <a href="" class="unknown-back">← Назад</a>
+                        </div>
+                    </div>
+                    <a href="" class="button modal-button">Отримати знижку</a>
+                </div>
+            </div>
+        </div>
     <script src="js/index.js"></script>
 </body>
 </html>
