@@ -1,64 +1,186 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* ~~~~~~~~~~~~~~~ Reset Style ~~~~~~~~~~~~~~~ */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {display: block;}
-html {height: 100%;}
-body {line-height: 1;font-family: Raleway;}
-ol, ul {list-style: none;}
-blockquote, q {quotes: none;}
-blockquote:before, blockquote:after,
-q:before, q:after {content: ''; content: none;}
-table {border-collapse: collapse; border-spacing: 0;}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    font-family: Raleway;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .container {
     margin: 0 auto;
     width: 85%;
 }
+
 .logo {
     display: flex;
     align-items: center;
     gap: 25px;
 }
+
 .logo img {
     width: 55px;
 }
+
 header {
     margin-top: 30px;
 }
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 main {
     justify-content: space-between;
     align-items: center;
     position: relative;
     margin-top: 51px;
 }
+
 .main-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
 }
+
 .main-content img {
     height: 393px;
     width: 345px;
 }
+
 .info {
     display: flex;
     flex-direction: column;
@@ -66,12 +188,13 @@ main {
     text-align: left;
     max-width: 700px;
 }
+
 .button {
     cursor: pointer;
     font-size: 16px;
     color: rgb(255, 254, 254);
     padding: 20px 56px;
-    border-radius: 15px; 
+    border-radius: 15px;
     text-decoration: none;
     transition: 0.2s;
     text-align: center;
@@ -80,13 +203,16 @@ main {
     width: fit-content;
     background-color: #385AD2;
 }
+
 .main__button {
     margin-top: 27px;
 }
-.button a{
+
+.button a {
     text-decoration: none;
     color: #FFFFFF;
 }
+
 .button:hover {
     background-color: #385AD2;
     transform: scale(98%);
@@ -95,6 +221,7 @@ main {
     -ms-transform: scale(98%);
     -o-transform: scale(98%);
 }
+
 .slider {
     user-select: none;
     overflow-x: hidden;
@@ -114,11 +241,13 @@ main {
     -ms-transition: transform 0.2s ease;
     -o-transition: transform 0.2s ease;
 }
+
 .slide__content {
     align-items: center;
     display: flex;
     gap: 17px;
 }
+
 .slide {
     border-radius: 22px;
     box-shadow: 0px 4px 91.5px -3px #00000021;
@@ -133,11 +262,13 @@ main {
     -ms-border-radius: 22px;
     -o-border-radius: 22px;
 }
+
 .slide__title {
     text-align: left;
     font-weight: 600;
     font-size: 21px;
 }
+
 .slide__subtitle {
     height: 50%;
     width: 90%;
@@ -149,6 +280,7 @@ main {
     font-size: 17px;
     line-height: 25.5px;
 }
+
 .action {
     padding: 54px 79px;
     background-color: #F6F6F6;
@@ -158,36 +290,44 @@ main {
     -ms-border-radius: 32px;
     -o-border-radius: 32px;
 }
+
 .action-info {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
 .action-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .main-content__title {
     font-weight: 600;
     font-size: 49px;
 }
+
 .main-content__subtitle {
     font-weight: 400;
     font-size: 23px;
 }
+
 .action__title {
     font-weight: normal;
     font-size: 24px;
 }
+
 .action__subtitle {
     font-weight: 400;
     font-size: 16px;
     color: #696968;
 }
+
 .action__subtitle__link {
     color: #3C3C3C;
 }
+
 .bg-circle {
     top: 45px;
     left: 190px;
@@ -205,6 +345,7 @@ main {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
 .bg-circle__red {
     top: 170px;
     right: 200px;
@@ -222,6 +363,7 @@ main {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
 footer {
     margin-top: 50px;
     color: #696968;
@@ -229,4 +371,252 @@ footer {
     font-size: 16;
     text-align: center;
     padding: 56px 0;
+}
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    align-items: center;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 36px 51px;
+    border: 1px solid #888;
+    width: 361px;
+    border-radius: 14px;
+    position: relative;
+    animation: slideUp 0.5s ease;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+.modal-button {
+    font-size: 14px !important;
+    padding: 16px 27px;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+
+.modal-content h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.modal__bottom-section {
+    margin-top: 35px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__bottom-section a {
+    font-size: 12px;
+}
+
+.modal__bottom-section a:first-child {
+    text-decoration: underline;
+    color: var(--var-primary);
+    font-size: 15px;
+}
+
+.close {
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    position: absolute;
+    top: -85px;
+    right: 43%;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    background-color: white;
+    padding: 17px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: transform 0.4s ease;
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    -ms-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+}
+
+.close:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.modal-inputs {
+    margin: 18px 0;
+}
+
+.modal-content input {
+    border: solid 1px #ABABAB;
+    width: 100%;
+    padding: 15px 25px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    transition: 0.2s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.modal-content input:focus {
+    border: solid 1px black;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #e4e8f8;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--var-primary);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--var-primary-light);
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(110vh);
+        -webkit-transform: translateY(110vh);
+        -moz-transform: translateY(110vh);
+        -ms-transform: translateY(110vh);
+        -o-transform: translateY(110vh);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+fieldset {
+    margin-top: 25px;
+    width: 100%;
+    border: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-group {
+    width: 100%;
+    margin: auto;
+
+}
+
+.button-group input[type="radio"] {
+    display: none;
+}
+
+.button-group label {
+    padding: 15px 23px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 13px;
+    margin: 5px;
+    background-color: white;
+    border: 2px solid #ABABAB;
+}
+
+.button-group input[type="radio"]:checked+label {
+    background-color: #F1F4FE;
+    color: #385BD2;
+    border: 2px solid #385BD2;
+}
+.unknown-level {
+    color: #385AD2;
+}
+.unknown-level__active {
+    text-decoration: none !important;
+    color: #000 !important;
+    cursor: default;
+}
+.unknown-level__active a{
+    text-decoration: none !important;
+}
+.back-button {
+    color: #385AD2 !important;
+}
+.unknown-back {
+    display: none;
+}
+.unknown-back__active {
+    display: block;
+}
+
+.unknown-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
