@@ -139,4 +139,18 @@ document.querySelector(".unknown-back").addEventListener("click", function (even
     // Убираем класс `unknown-level__active` у ссылки "Не знаю свого рівня"
     levelButton.classList.remove("unknown-level__active");
 });
+function updateActionTitleText() {
+    const actionTitle = document.querySelector(".action__title");
 
+    if (window.innerWidth <= 830) {
+        actionTitle.textContent = "А тепер просто натисність кнопку внизу :)";
+    } else {
+        actionTitle.textContent = "А тепер просто натисність кнопку справа :)";
+    }
+}
+
+// Викликаємо функцію при завантаженні сторінки
+updateActionTitleText();
+
+// Додаємо слухач події для зміни розміру вікна
+window.addEventListener("resize", updateActionTitleText);

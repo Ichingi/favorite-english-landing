@@ -24,6 +24,124 @@ blockquote:before, blockquote:after,
 q:before, q:after {content: ''; content: none;}
 table {border-collapse: collapse; border-spacing: 0;}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media(max-width:990px) {
+    .character {
+        display: none !important;
+    }
+}
+
+@media(max-width:1111px) {
+    .action__title {
+        max-width: 391px;
+    }
+}
+
+@media(max-width:974px) {
+    .button {
+        font-size: 14px !important;
+    }
+
+    .action__title {
+        font-size: 18px !important;
+    }
+
+    .action__subtitle {
+        font-size: 13px !important;
+    }
+}
+
+@media(max-width:927px) {
+    .action__title {
+        max-width: 290px;
+    }
+
+    .action__subtitle {
+        max-width: 290px;
+    }
+}
+
+@media(max-width:830px) {
+    .button {
+        margin-top: 15px;
+        width: fit-content !important;
+    }
+
+    .action-info {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .action__title {
+        max-width: none !important;
+    }
+
+    .action__subtitle {
+        max-width: none !important;
+    }
+}
+
+@media(max-width:613px) {
+    .main-content__title {
+        font-size: 26px !important;
+        max-width: none !important;
+    }
+
+    .main-content__subtitle {
+        font-size: 17px !important;
+        max-width: none !important;
+    }
+
+    .info {
+        gap: 23px !important;
+    }
+
+    .info-button {
+        padding: 16px 37px !important;
+    }
+}
+
+@media(max-width:544px) {
+    .action {
+        padding: 32px 40px;
+    }
+
+    .button {
+        width: 62% !important;
+    }
+
+    .bg-circle {
+        left: 20px !important;
+        height: 210px !important;
+        width: 210px !important;
+    }
+
+    .bg-circle__red {
+        right: 200px !important;
+        height: 210px !important;
+        width: 210px !important;
+    }
+}
+
+@media(max-width:464px) {
+    .action {
+        padding: 37px 41px !important;
+    }
+}
+
+@media(max-width:375px) {
+    .button {
+        padding: 14px 36px !important;
+        width: 68% !important;
+        font-size: 12px !important;
+    }
+
+    .action {
+        padding: 32px 33px !important;
+    }
+}
+
+@media(max-width:375px) {}
+
 .container {
     margin: 0 auto;
     width: 85%;
@@ -77,18 +195,23 @@ main {
 }
 
 .button {
+    font-weight: 400;
+    height: fit-content;
     cursor: pointer;
     font-size: 16px;
     color: rgb(255, 254, 254);
     padding: 20px 56px;
-    border-radius: 15px;
+    border-radius: 12px;
     text-decoration: none;
     transition: 0.2s;
     text-align: center;
     outline: none;
     border: none;
-    width: fit-content;
     background-color: #385AD2;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
 }
 
 .main__button {
@@ -179,6 +302,7 @@ main {
 }
 
 .action-info {
+    align-items: center;
     width: 100%;
     display: flex;
     justify-content: space-between;
