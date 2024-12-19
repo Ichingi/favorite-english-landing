@@ -175,7 +175,6 @@ table {
 
 @media(max-width:830px) {
     .button {
-        margin-top: 15px;
         width: fit-content !important;
     }
 
@@ -190,6 +189,12 @@ table {
 
     .action__subtitle {
         max-width: none !important;
+    }
+}
+
+@media(max-height: 700px) {
+    .close {
+        top: -32px !important;
     }
 }
 
@@ -233,12 +238,48 @@ table {
         height: 210px !important;
         width: 210px !important;
     }
+
+    .modal-content {
+        width: 280px !important;
+    }
+    .button-group label {
+        font-size: 11px !important;
+        padding: 12px 17px !important;
+    }
+    fieldset {
+        gap: 10px !important;
+    }
 }
 
 @media(max-width:464px) {
     .action {
         padding: 37px 41px !important;
     }
+
+    .modal-content {
+        width: 70% !important;
+        padding: 35px 34px !important;
+    }
+
+    .modal__bottom-section a:first-child {
+        font-size: 13px !important;
+        line-height: 19px;
+    }
+
+    .modal-some-information p {
+        font-size: 13px !important;
+    }
+
+    .close {
+        font-size: 25px !important;
+        padding: 12px !important;
+    }
+
+    .modal__bottom-section .button {
+        padding: 13px 17px !important;
+        font-size: 14px !important;
+    }
+
 }
 
 @media(max-width:375px) {
@@ -253,7 +294,8 @@ table {
     }
 }
 
-@media(max-width:375px) {}
+
+
 
 .container {
     margin: 0 auto;
@@ -350,7 +392,7 @@ main {
     overflow-x: hidden;
     padding: 45px 0;
     cursor: grab;
-    margin: 131px auto;
+    margin: 51px auto;
 }
 
 .slider-track {
@@ -455,7 +497,7 @@ main {
 .bg-circle {
     top: 45px;
     left: 190px;
-    z-index: 1;
+    z-index: -1;
     display: block;
     position: absolute;
     height: 310px;
@@ -473,7 +515,7 @@ main {
 .bg-circle__red {
     top: 170px;
     right: 200px;
-    z-index: 1;
+    z-index: -1;
     display: block;
     position: absolute;
     height: 310px;
@@ -548,7 +590,6 @@ footer {
 }
 
 .modal__bottom-section {
-    margin-top: 35px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -599,13 +640,15 @@ footer {
 
 .modal-inputs {
     margin: 18px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .modal-content input {
     border: solid 1px #ABABAB;
     width: 100%;
     padding: 15px 25px;
-    margin: 5px 0;
     box-sizing: border-box;
     transition: 0.2s;
     border-radius: 10px;
@@ -684,42 +727,6 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
-fieldset {
-    margin-top: 25px;
-    width: 100%;
-    border: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-.button-group {
-    width: 100%;
-    margin: auto;
-
-}
-
-.button-group input[type="radio"] {
-    display: none;
-}
-
-.button-group label {
-    padding: 15px 23px;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    border-radius: 15px;
-    text-align: center;
-    font-size: 13px;
-    margin: 5px;
-    background-color: white;
-    border: 2px solid #ABABAB;
-}
-
-.button-group input[type="radio"]:checked+label {
-    background-color: #F1F4FE;
-    color: #385BD2;
-    border: 2px solid #385BD2;
-}
-
 .unknown-level {
     color: #385AD2;
 }
@@ -750,4 +757,43 @@ fieldset {
     display: flex;
     flex-direction: column;
     gap: 6px;
+}
+
+.button-group label {
+    display: block;
+    padding: 13px 22px;
+    cursor: pointer;
+    border: 1px solid #ABABAB;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    text-align: center;
+    font-size: 13px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+fieldset {
+    width: 100%;
+    border: 0;
+    display: flex;
+    gap: 13px;
+    justify-content: space-between;
+}
+
+.button-group {
+    width: 100%;
+    margin: auto;
+}
+
+.button-group input[type="radio"] {
+    display: none;
+}
+
+.button-group input[type="radio"]:checked+label {
+    background-color: #F1F4FE;
+    color: #385BD2;
+    border: 2px solid #385BD2;
 }
