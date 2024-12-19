@@ -190,6 +190,9 @@ table {
     .action__subtitle {
         max-width: none !important;
     }
+    .action__button {
+        margin-top: 25px;
+    }
 }
 
 @media(max-height: 700px) {
