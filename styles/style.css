@@ -798,5 +798,5 @@ fieldset {
 .button-group input[type="radio"]:checked+label {
     background-color: #F1F4FE;
     color: #385BD2;
-    border: 2px solid #385BD2;
+    border: 1px solid #385BD2;
 }
