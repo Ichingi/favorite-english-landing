@@ -137,6 +137,11 @@ table {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media(min-width:1880px) {
+    .container {
+        width: 72% !important;
+    }
+}
 @media(max-width:990px) {
     .character {
         display: none !important;
