@@ -17,7 +17,7 @@ time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; fon
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {display: block;}
 html {height: 100%;}
-body {line-height: 1;font-family: "Raleway", serif;}
+body {line-height: 1;font-family: Raleway;}
 ol, ul {list-style: none;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,
@@ -244,7 +244,7 @@ main {
 
 .main-content img {
     height: 393px;
-    width: 333px;
+    width: 345px;
 }
 
 .info {
