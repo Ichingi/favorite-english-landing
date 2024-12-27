@@ -303,7 +303,18 @@ table {
 }
 
 
-
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/raleway/v23/1Ptug8zYS_SKggPNwIYqWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/raleway/v23/1Ptug8zYS_SKggPNwIYqWqZPBQ.woff2) format('woff2');
+}
 
 .container {
     margin: 0 auto;
