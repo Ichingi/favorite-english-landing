@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favorite English — подача заявки</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="images/character.svg" as="image" type="image/svg+xml">
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <style>
@@ -64,7 +66,9 @@
                     <div class="main__button"><a onclick="openModal('getDiscount')"
                     class="button btn-adaptive info-button">Отримати знижку 15%</a></div>
                 </div>
-                <div class="character"><img src="images/character.svg" loading="lazy" alt="Character"></div>
+                <div class="character">
+                    <img src="images/character.svg" loading="lazy" width="393" height="468" alt="Character">
+                </div>                
             </div>
         </main>
     </div>
