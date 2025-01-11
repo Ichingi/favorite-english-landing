@@ -147,8 +147,33 @@ table {border-collapse: collapse; border-spacing: 0;}
 }
 
 @media(max-width:464px) {
+    .button {
+        width: fit-content !important;
+        font-size: 14px !important;
+    }
+
+    .logo img {
+        width: 41px !important;
+    }
+
+    .logo span {
+        font-size: 14px;
+    }
+
+    .socials a img {
+        width: 31px !important;
+    }
+
     .action {
         padding: 37px 41px !important;
+    }
+
+    .action-info {
+        align-items: start !important;
+    }
+   
+    .slide {
+        padding: 34px;
     }
 
     .modal-content {
@@ -178,11 +203,11 @@ table {border-collapse: collapse; border-spacing: 0;}
 }
 
 @media(max-width:375px) {
-    .button {
+    /* .button {
         padding: 14px 36px !important;
         width: 68% !important;
         font-size: 12px !important;
-    }
+    } */
 
     .action {
         padding: 32px 33px !important;
