@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,6 +45,15 @@
                         та отримай знижку
                     </p>
                     <div class="main__button">
+                        <?php
+                            if (isset($_SESSION['message']))
+                            {
+                                ?>
+                                    <span><?= $_SESSION['message'] ?></span>
+                                <?php
+                                $_SESSION['message'] = null;
+                            }
+                        ?>
                         <button onclick="openModal('getDiscount')" class="button btn-adaptive info-button">Отримати знижку 15%</button>
                     </div>
                 </div>
@@ -100,39 +111,38 @@
             </div>
         </div>
     </div>
-    <footer>Favorite English 2024</footer>
+    <footer>Favorite English 2025</footer>
     <!-- Модальне вікно реєстрації -->
     <div id="getDiscount" class="modal" data-modal="getDiscount">
-        <div class="modal-content">
+        <form class="modal-content" action="submit.php" method="post">
             <span class="close" onclick="closeModal('getDiscount')"><ion-icon name="close-outline"></ion-icon></span>
             <h2>Отримання знижки</h2>
             <div class="modal-inputs">
-                <input type="text" placeholder="Ім'я" required>
-                <input type="email" placeholder="Email" required>
+                <input type="text" name="name" placeholder="Ім'я" required>
+                <input type="email" name="email" placeholder="Email" required>
                 <fieldset>
                     <div class="button-group">
-                        <input type="radio" id="A1" name="frameworks" checked="" />
+                        <input type="radio" value="A1" id="A1" name="level" checked="" />
                         <label for="A1">A1</label>
                     </div>
                     <div class="button-group">
-                        <input type="radio" id="A2" name="frameworks" />
+                        <input type="radio" value="A2" id="A2" name="level" />
                         <label for="A2">A2</label>
                     </div>
                     <div class="button-group">
-                        <input type="radio" id="B1" name="frameworks" />
+                        <input type="radio" value="B1" id="B1" name="level" />
                         <label for="B1">B1</label>
                     </div>
                     <div class="button-group">
-                        <input type="radio" id="B2" name="frameworks" />
+                        <input type="radio" value="B2" id="B2" name="level" />
                         <label for="B2">B2</label>
                     </div>
                     <div class="button-group">
-                        <input type="radio" id="C1" name="frameworks" />
+                        <input type="radio" value="C1" id="C1" name="level" />
                         <label for="C1">C1</label>
                     </div>
                 </fieldset>
-
-            </div>
+            </form>
             <div class="modal__bottom-section">
                 <div class="unknown-section">
                     <div class="unknown-level"><a href="#">Не знаю свого рівня</a></div>
@@ -140,9 +150,9 @@
                         <a href="" class="unknown-back">← Назад</a>
                     </div>
                 </div>
-                <a href="" class="button modal-button">Отримати знижку</a>
+                <button type="submit" class="button modal-button">Отримати знижку</a>
             </div>
-        </div>
+        </form>
     </div>
     <script src="js/index.js" defer></script>
 </body>

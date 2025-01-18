@@ -287,6 +287,14 @@ main {
 
 .main__button {
     margin-top: 27px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 15px;
+}
+
+.main__button span {
+    color: #5faf78;
 }
 
 .button a {
