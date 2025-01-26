@@ -15,10 +15,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
     $application->saveApplication($name, $email, $level);
     
+    $botToken = "token";
+    $chatId = "chatid";
+
+    $message = "✅ *Нова заявка*!\n➖➖➖➖➖➖➖➖➖➖➖\n\n";
+    $message .= "*Ім'я*: $name\n";
+    $message .= "*Email*: $email\n";
+    $message .= "*Рівень*: $level";
+
+    $url = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=" . urlencode($message) . "&parse_mode=Markdown";
+
+    file_get_contents($url);
+
     $_SESSION['message'] = 'Анкета успішно надіслана!';
-    header('Location: index.html');
+    header('Location: /');
 }
 else
 {
-    header('Location: index.html');
+    header('Location: /');
 }
