@@ -1,10 +1,10 @@
 <?php
 class Database
 {
-    private $host = '127.0.0.1';
-    private $dbname = 'landing';
+    private $host = 'localhost';
+    private $dbname = 'favorite-english';
     private $username = 'root';
-    private $password = 'h6J2vT37Ti';
+    private $password = '123456';
     private $conn;
 
     public function __construct()

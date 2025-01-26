@@ -15,8 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
     $application->saveApplication($name, $email, $level);
     
-    $botToken = "6997983154:AAGstWEtEw-Z_dv-zV5qIyWTl9AF3YCfvko";
-    $chatId = "-1002019592901";
+    $botToken = "token";
+    $chatId = "chatid";
 
     $message = "✅ *Нова заявка*!\n➖➖➖➖➖➖➖➖➖➖➖\n\n";
     $message .= "*Ім'я*: $name\n";
