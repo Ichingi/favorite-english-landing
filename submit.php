@@ -13,12 +13,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     $db = new Database();
     $application = new Application($db->getConnection());
 
-    $application->saveApplication($name, $email, $level);
-    
-    $_SESSION['message'] = 'Анкета успішно надіслана!';
-    header('Location: index.html');
+    if ($application->saveApplication($name, $email, $level)) {
+        $_SESSION['message'] = 'Анкета успішно надіслана!';
+        $_SESSION['success'] = 1;
+    } else {
+        $_SESSION['message'] = 'Помилка під час надсилання анкети!';
+        $_SESSION['success'] = 0;
+    }
+
+    header('Location: /');
 }
 else
 {
-    header('Location: index.html');
+    header('Location: /');
 }
