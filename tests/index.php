@@ -52,10 +52,10 @@
         <div class="container">
             <header>
                 <nav>
-                    <div class="logo">
+                    <a href="/" class="logo">
                         <img src="/images/logo.svg" loading="lazy" alt="Logo" width="76" height="76">
                         <span>FAVORITE ENGLISH</span>
-                    </div>
+                    </a>
                     <div class="socials">
                         <a href="https://www.instagram.com/favorite.english.school/">
                             <img src="/images/Instagram.svg" alt="Instagram" width="35" height="36">

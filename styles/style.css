@@ -291,6 +291,8 @@ table {border-collapse: collapse; border-spacing: 0;}
     display: flex;
     align-items: center;
     gap: 25px;
+    text-decoration: none !important;
+    color: black;
 }
 
 .logo img {
