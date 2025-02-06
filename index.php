@@ -50,9 +50,10 @@
                                 if (isset($_SESSION['message']))
                                 {
                                     ?>
-                                        <span><?= $_SESSION['message'] ?></span>
+                                        <span class="<?= $_SESSION['success'] ? '' : 'red' ?>"><?= $_SESSION['message'] ?></span>
                                     <?php
                                     $_SESSION['message'] = null;
+                                    $_SESSION['success'] = null;
                                 }
                             ?>
                             <button onclick="openModal('getDiscount')" class="button btn-adaptive info-button">Отримати знижку 15%</button>

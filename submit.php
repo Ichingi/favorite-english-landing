@@ -13,21 +13,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     $db = new Database();
     $application = new Application($db->getConnection());
 
-    $application->saveApplication($name, $email, $level);
-    
-    $botToken = "token";
-    $chatId = "chatid";
+    if ($application->saveApplication($name, $email, $level)) {
+        $_SESSION['message'] = 'Анкета успішно надіслана!';
+        $_SESSION['success'] = 1;
+    } else {
+        $_SESSION['message'] = 'Помилка під час надсилання анкети!';
+        $_SESSION['success'] = 0;
+    }
 
-    $message = "✅ *Нова заявка*!\n➖➖➖➖➖➖➖➖➖➖➖\n\n";
-    $message .= "*Ім'я*: $name\n";
-    $message .= "*Email*: $email\n";
-    $message .= "*Рівень*: $level";
-
-    $url = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=" . urlencode($message) . "&parse_mode=Markdown";
-
-    file_get_contents($url);
-
-    $_SESSION['message'] = 'Анкета успішно надіслана!';
     header('Location: /');
 }
 else
