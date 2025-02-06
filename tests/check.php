@@ -28,4 +28,4 @@ if ($_SESSION['question_number'] >= $_SESSION['total_questions'])
     exit();
 }
 
-header("Location: /tests/");
+header("Location: /tests");
