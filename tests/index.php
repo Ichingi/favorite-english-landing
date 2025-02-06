@@ -54,7 +54,7 @@
                 <nav>
                     <a href="/" class="logo">
                         <img src="/images/logo.svg" loading="lazy" alt="Logo" width="76" height="76">
-                        <span>FAVORITE ENGLISH</span>
+                        <span>FAVORITE ENGLISH <span class="grey small-text">( на головну )</span></span>
                     </a>
                     <div class="socials">
                         <a href="https://www.instagram.com/favorite.english.school/">

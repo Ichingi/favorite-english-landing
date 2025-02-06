@@ -9,5 +9,5 @@ if (isset($_SESSION['question_number']) && $_SESSION['question_number'] > 0) {
     $_SESSION['question_number'] -= 1;
 }
 
-header("Location: /tests/index.php");
+header("Location: /tests");
 exit();

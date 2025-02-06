@@ -341,6 +341,14 @@ h3 {
     max-width: 700px;
 }
 
+.grey {
+    color: #686869;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
 .buttons {
     display: flex;
     justify-content: center;

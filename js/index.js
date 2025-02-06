@@ -98,7 +98,6 @@ window.onkeydown = function(event) {
     }
 };
 
-// Клик на "Не знаю свого рівня"
 document.querySelector(".unknown-level").addEventListener("click", function (event) {
     event.preventDefault(); // Отключаем стандартное поведение ссылки
 
@@ -117,6 +116,13 @@ document.querySelector(".unknown-level").addEventListener("click", function (eve
 
     // Добавляем или убираем активный класс `unknown-level__active` у ссылки "Не знаю свого рівня"
     levelButton.classList.toggle("unknown-level__active", isUnknown);
+
+    // Переключаем тег с кнопки на ссылку с новым href
+    if (isUnknown) {
+        discountButton.outerHTML = `<a href="/tests" class="button modal-button">${discountButton.textContent}</a>`;
+    } else {
+        discountButton.outerHTML = `<button class="modal-button">${discountButton.textContent}</button>`;
+    }
 });
 
 // Клик на "Назад"
