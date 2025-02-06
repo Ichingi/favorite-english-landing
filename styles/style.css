@@ -291,6 +291,8 @@ table {border-collapse: collapse; border-spacing: 0;}
     display: flex;
     align-items: center;
     gap: 25px;
+    text-decoration: none !important;
+    color: black;
 }
 
 .logo img {
@@ -645,6 +647,17 @@ footer {
 .tests__answer.active {
     background-color: #EDF0FA;
     border-color: #385AD2;
+}
+
+/* Ховаємо стандартний radio input */
+.tests__answer input[type="radio"] {
+    display: none;
+}
+
+/* Додаємо кастомну стилізацію для вибраного варіанту */
+.tests__answer input[type="radio"]:checked + span {
+    background: #a138d2;
+    color: #fff;
 }
 
 .tests-page {

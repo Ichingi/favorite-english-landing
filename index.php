@@ -22,10 +22,10 @@
         <div class="container">
             <header>
                 <nav>
-                    <div class="logo">
+                    <a href="/" class="logo">
                         <img src="images/logo.svg" loading="lazy" alt="Logo" style="width: 76px; height: 76px;">
                         <span>FAVORITE ENGLISH</span>
-                    </div>
+                    </a>
                     <div class="socials">
                         <a href="https://www.instagram.com/favorite.english.school/"><img src="images/Instagram.svg" alt="Instagram" style="width: 35px; height: 36px;"></a>
                         <a href="https://www.tiktok.com/@favorite.english.school"><img src="images/TikTok.svg" alt="TikTok" style="width: 35px; height: 36px;"></a>
