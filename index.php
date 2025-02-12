@@ -27,8 +27,8 @@
                         <span>FAVORITE ENGLISH</span>
                     </a>
                     <div class="socials">
-                        <a href="https://www.instagram.com/favorite.english.school/"><img src="images/Instagram.svg" alt="Instagram" style="width: 35px; height: 36px;"></a>
-                        <a href="https://www.tiktok.com/@favorite.english.school"><img src="images/TikTok.svg" alt="TikTok" style="width: 35px; height: 36px;"></a>
+                        <a href="https://www.instagram.com/favorite.english.school" target="_blank"><img src="images/Instagram.svg" alt="Instagram" style="width: 35px; height: 36px;"></a>
+                        <a href="https://www.tiktok.com/@favorite.english.school" target="_blank"><img src="images/TikTok.svg" alt="TikTok" style="width: 35px; height: 36px;"></a>
                     </div>
                 </nav>
             </header>
@@ -105,7 +105,7 @@
                 <div class="action-info">
                     <div class="action-content">
                         <h1 class="action__title">А тепер просто натисність кнопку справа :)</h1>
-                        <p class="action__subtitle">Більше датільнішої інформації у нас в <a href="" class="action__subtitle__link">instagram</a></p>
+                        <p class="action__subtitle">Більше датільнішої інформації у нас в <a href="https://www.instagram.com/favorite.english.school" target="_blank" class="action__subtitle__link">instagram</a></p>
                     </div>
                     <div class="action__button">
                         <button onclick="openModal('getDiscount')" class="button btn-adaptive">Отримати знижку 15%</button>
@@ -145,7 +145,7 @@
                         <label for="C1">C1</label>
                     </div>
                 </fieldset>
-            </form>
+            </div>
             <div class="modal__bottom-section">
                 <div class="unknown-section">
                     <div class="unknown-level"><a href="#">Не знаю свого рівня</a></div>

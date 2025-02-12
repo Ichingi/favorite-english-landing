@@ -57,7 +57,7 @@
                         <span>FAVORITE ENGLISH <span class="grey small-text">( на головну )</span></span>
                     </a>
                     <div class="socials">
-                        <a href="https://www.instagram.com/favorite.english.school/">
+                        <a href="https://www.instagram.com/favorite.english.school">
                             <img src="/images/Instagram.svg" alt="Instagram" width="35" height="36">
                         </a>
                         <a href="https://www.tiktok.com/@favorite.english.school">

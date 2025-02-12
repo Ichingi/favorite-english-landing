@@ -41,13 +41,17 @@ session_destroy();
         <div class="container">
             <header>
                 <nav>
-                    <div class="logo">
-                        <img src="/images/logo.svg" loading="lazy" alt="Logo" style="width: 76px; height: 76px;">
-                        <span>FAVORITE ENGLISH</span>
-                    </div>
+                    <a href="/" class="logo">
+                        <img src="/images/logo.svg" loading="lazy" alt="Logo" width="76" height="76">
+                        <span>FAVORITE ENGLISH <span class="grey small-text">( на головну )</span></span>
+                    </a>
                     <div class="socials">
-                        <a href="https://www.instagram.com/favorite.english.school/"><img src="/images/Instagram.svg" alt="Instagram" style="width: 35px; height: 36px;"></a>
-                        <a href="https://www.tiktok.com/@favorite.english.school"><img src="/images/TikTok.svg" alt="TikTok" style="width: 35px; height: 36px;"></a>
+                        <a href="https://www.instagram.com/favorite.english.school">
+                            <img src="/images/Instagram.svg" alt="Instagram" width="35" height="36">
+                        </a>
+                        <a href="https://www.tiktok.com/@favorite.english.school">
+                            <img src="/images/TikTok.svg" alt="TikTok" width="35" height="36">
+                        </a>
                     </div>
                 </nav>
             </header>

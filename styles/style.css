@@ -346,7 +346,7 @@ h3 {
 }
 
 .small-text {
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .buttons {
@@ -356,6 +356,7 @@ h3 {
 }
 
 .button {
+    width: fit-content;
     font-weight: 400;
     height: fit-content;
     cursor: pointer;
@@ -427,9 +428,9 @@ h3 {
 .slider {
     user-select: none;
     overflow-x: hidden;
-    padding: 45px 0;
+    padding: 100px 0;
     cursor: grab;
-    margin: 51px auto;
+    margin: 15px auto;
 }
 
 .slider-track {
@@ -742,7 +743,7 @@ footer {
 
 .modal__bottom-section a:first-child {
     text-decoration: underline;
-    color: var(--var-primary);
+    color: #385AD2;
     font-size: 15px;
 }
 
@@ -817,7 +818,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--var-primary);
+    background-color: #8398e2;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -826,7 +827,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: var(--var-primary-light);
+    background-color: #adbcf1;
 }
 
 @keyframes slideUp {
@@ -881,6 +882,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .unknown-level__active a {
     text-decoration: none !important;
+    color: black !important;
 }
 
 .back-button {
